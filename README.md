@@ -9,7 +9,7 @@
 
 <br>  
 
-[![GitHub Repo](https://img.shields.io/badge/View%20on-GitHub-000?style=for-the-badge&logo=github)](https://github.com/your-username/mobile-phone-store "click here to visit the repository") 
+[![GitHub Repo](https://img.shields.io/badge/View%20on-GitHub-000?style=for-the-badge&logo=github)](https://github.com/shazee-04/e-commerce-site "click here to visit the repository") 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-27AE60?style=for-the-badge&logo=google-chrome&logoColor=white)](your-live-demo-link "click here to visit the live website")  
 
 </div>  
@@ -80,7 +80,7 @@
 [![](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white&style=for-the-badge)](https://github.com/shazee-04)
 [![](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)](https://linkedin.com/in/shazeesandaruwan)
 [![](https://img.shields.io/badge/instagram-fd1b52?logo=instagram&logoColor=white&style=for-the-badge)](https://instagram/shazee.04)
-[![](https://img.shields.io/badge/email-facf52?logo=gmail&logoColor=black&style=for-the-badge)](mailto:your-email@example.com?subject=Hello%20from%20your%20website&body=This%20is%20the%20body%20of%20the%20email.)  
+[![](https://img.shields.io/badge/email-facf52?logo=gmail&logoColor=black&style=for-the-badge)](mailto:mgssrangajeewa@gmail.com?subject=Hello%20from%20Github&body=Looking%20forward%20to%20connect.)  
 
 <br><br>
 
