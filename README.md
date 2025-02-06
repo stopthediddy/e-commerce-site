@@ -79,7 +79,8 @@
 
 [![](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white&style=for-the-badge)](https://github.com/shazee-04)
 [![](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)](https://linkedin.com/in/shazeesandaruwan)
-[![](https://img.shields.io/badge/instagram-fd1b52?logo=instagram&logoColor=white&style=for-the-badge)](https://instagram/shazee.04)  
+[![](https://img.shields.io/badge/instagram-fd1b52?logo=instagram&logoColor=white&style=for-the-badge)](https://instagram/shazee.04)
+[![](https://img.shields.io/badge/email-facf52?logo=gmail&logoColor=black&style=for-the-badge)](mailto:your-email@example.com?subject=Hello%20from%20your%20website&body=This%20is%20the%20body%20of%20the%20email.)  
 
 <br><br>
 
@@ -87,6 +88,6 @@
 
 *If you like this project, please **Star this repo** on GitHub! It helps!*  
 
-<a href="https://github.com/your-username/your-repo-name">
+<a href="https://github.com/shazee-04/e-commerce-site">
   <img src="https://img.shields.io/badge/⭐-Star this repository-blue?style=for-the-badge&logo=star" alt="Star this repository">
 </a>
