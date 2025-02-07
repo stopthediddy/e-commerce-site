@@ -166,5 +166,5 @@ function showPW2() {
 
 // single product page ---------------------------------------------------------------------------
 function singleProductView() {
-    window.location.href = "single-product-view.html";
+    window.location.href = "pages/single-product-view.html";
 }
