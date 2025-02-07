@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #101010;
+
+    --special-color: #ff3f3f;
+
+    --background-color-1: #f2f2f2;
+    --background-color-2: #101010;
+    --background-color-3: #181818;
+    --background-color-4: #ffffff;
+
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+    --text-color-3: #cccccc;
+    --text-color-4: #4f4f4f;
+    --text-color-5: #2f2f2f;
+    --text-color-6: #000000;
+
+    --gradient-mask: linear-gradient(to right, transparent 1%, #00000010 15%, #000000 50%, #00000010 85%, transparent 99%);
+
+    --card-border-radius: 15px;
+}
+
+.filters-section {
+    /* height: max-content; */
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.accordion {
+    --bs-accordion-color: black;
+    --bs-accordion-bg: white;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: var(--bs-border-color);
+    --bs-accordion-border-width: 0;
+    --bs-accordion-border-radius: 15px;
+    --bs-accordion-inner-border-radius: 15px;
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: black;
+    --bs-accordion-btn-bg: white;
+    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: black;
+    --bs-accordion-active-bg: white;
+}
+
+.form-check-label {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.sort-by .btn:not(.btn-custom) {
+    margin-left: 0 !important;
+}
+
+/* .sort-by .btn:hover:not(.btn-custom) {
+    color: white;
+    background-color: #181818;
+} */
+
+/* .sort-by .btn:focus:not(.btn-custom) {
+    color: black;
+    background-color: white;
+} */
+
+.sort-by .btn.active {
+    color: black;
+    background-color: white;
+}
+
+.sort-by .btn-dark {
+    --bs-btn-hover-bg: #181818;
+}
+
+.quick-menu .btn-light {
+    --bs-btn-active-border-color: #181818;
+}
+
+.quick-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.quick-menu button {
+    min-width: max-content;
+}
+
+.translate-custom {
+    transform: translate(-100%, -50%) !important;
+}
+
+.arrow-1,
+.arrow-2 {
+    top: 50%;
+    /* height: 100%; */
+    padding-inline: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    /* background-color: #18181840; */
+    background-color: transparent !important;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.arrow-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.arrow-1 {
+    left: -2.5%;
+}
+
+.arrow-2 {
+    left: 60.9%;
+}
+
+/* 
+.arrow-1 img {
+    filter: invert(1);
+}
+
+.arrow-2 img {
+    filter: invert(1);
+} */
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.new-container .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.new-container .grid-container .grid-item {
+    border-radius: var(--card-border-radius);
+    background-color: #101010;
+    cursor: pointer;
+    transition: border 0.5s;
+}
+
+@media (max-width:1200px) {
+    .new-container .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:768px) {
+    .new-container .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+    }
+}
+@media (max-width:576px) {
+    .new-container .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+}

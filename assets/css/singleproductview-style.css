@@ -1,0 +1,125 @@
+:root {
+    --color-1: #ff00ff;
+    --color-2: #343a40;
+    --color-3: #002750;
+
+
+    --primary-color: #ffffff;
+    --secondary-color: #101010;
+
+    --special-color: #ff3f3f;
+
+    --background-color-1: #f2f2f2;
+    --background-color-2: #101010;
+    --background-color-3: #181818;
+    --background-color-4: #ffffff;
+
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+    --text-color-3: #cccccc;
+    --text-color-4: #4f4f4f;
+    --text-color-5: #2f2f2f;
+    --text-color-6: #000000;
+
+    --gradient-mask: linear-gradient(to right, transparent 1%, #00000010 15%, #000000 50%, #00000010 85%, transparent 99%);
+
+    --card-border-radius: 15px;
+}
+
+.color-1 {
+    background-color: #ff00ff;
+    aspect-ratio: 1/1 !important;
+    border: solid 1px #f2f2f2 !important;
+    padding: 15px !important;
+
+    --bs-btn-color: #000;
+    --bs-btn-bg: var(--color-1);
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #083058;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-active-color: #000000;
+    --bs-btn-active-bg: var(--color-1);
+    --bs-btn-active-border-color: #000000 !important;
+}
+
+.btn-check:checked + .btn {
+    border: solid 1px #000 !important;
+    box-shadow: #000 0 0 0 0.05rem !important;
+}
+
+.color-2 {
+    background-color: #343a40;
+    aspect-ratio: 1/1 !important;
+    border: solid 1px #f2f2f2 !important;
+    padding: 15px !important;
+
+    --bs-btn-color: #000;
+    --bs-btn-bg: var(--color-2);
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #083058;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-active-color: #000000;
+    --bs-btn-active-bg: var(--color-2);
+    --bs-btn-active-border-color: #000000;
+}
+
+.color-3 {
+    background-color: #002750;
+    aspect-ratio: 1/1 !important;
+    border: solid 1px #f2f2f2 !important;
+    padding: 15px !important;
+
+    --bs-btn-color: #000;
+    --bs-btn-bg: var(--color-3);
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #083058;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-active-color: #000000;
+    --bs-btn-active-bg: var(--color-3);
+    --bs-btn-active-border-color: #000000;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.new-container .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.new-container .grid-container .grid-item {
+    border-radius: var(--card-border-radius);
+    background-color: #101010;
+    cursor: pointer;
+    transition: border 0.5s;
+}
+
+@media (max-width:1200px) {
+    .new-container .grid-container {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width:992px) {
+    .new-container .grid-container {
+        grid-template-columns: auto auto auto;
+        column-gap: 25px;
+    }
+}
+
+@media (max-width:768px) {
+    .new-container .grid-container {
+        grid-template-columns: auto auto;
+        column-gap: 25px;
+    }
+}
+@media (max-width:576px) {
+    .new-container .grid-container {
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+    }
+}

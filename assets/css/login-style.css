@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #101010;
+
+    --special-color: #ff3f3f;
+
+    --background-color-1: #f2f2f2;
+    --background-color-2: #101010;
+    --background-color-3: #181818;
+    --background-color-4: #ffffff;
+
+    --background-color-5: #f2f2f2;
+
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+    --text-color-3: #cccccc;
+    --text-color-4: #4f4f4f;
+    --text-color-5: #2f2f2f;
+    --text-color-6: #000000;
+
+    --gradient-mask: linear-gradient(to right, transparent 1%, #00000010 15%, #000000 50%, #00000010 85%, transparent 99%);
+
+    --card-border-radius: 15px;
+}
+
+.login-card {
+    border: solid 7px var(--background-color-4);
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--background-color-4);
+    transition: all 0.3s ease-in-out;
+}
+
+.login-top-bg-1 {
+    width: 100%;
+    height: 50px;
+    border: none !important;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--background-color-5);
+}
+
+.login-top-bg-2 {
+    width: 100%;
+    height: 50px;
+    border: none !important;
+    border-radius: 20px 20px 0 0;
+    background-color: transparent;
+}
+
+.login-top-btn-1,
+.login-top-btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.br-custom-1 {
+    border-radius: 20px 20px 0 0;
+    background-color: var(--background-color-4);
+}
+
+.br-custom-2 {
+    border-radius: 0 20px 20px 20px;
+    background-color: var(--background-color-5);
+}
+
+.br-custom-3 {
+    border-radius: 20px 0 20px 20px;
+    background-color: var(--background-color-5);
+}
+
+.br-custom-bg {
+    border-radius: 0 20px 0 0;
+    background-color: var(--background-color-4);
+}
+
+.login-body-bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-grow: 1;
+}

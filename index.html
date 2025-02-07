@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tech Online Store</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/icon/main/logo.svg" type="image/x-icon">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="loader-div">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- navigation bar -->
+    <nav class="navbar-custom navbar navbar-expand-lg navbar-dark sticky-top ">
+        <div class="container pt-2 pb-1">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="assets/images/icon/main/logo.svg" class="me-1" alt="LOGO" height="30"
+                    class="d-inline-block align-text-top">
+                NEW TECH
+            </a>
+
+            <button class="navbar-toggler shadow-none p-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="btn btn-dark fs-7">MENU</span>
+            </button>
+
+            <div class="offcanvas offcanvas-custom offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-uppercase fw-bold fs-3" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body nav-underline">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-4 fs-7">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="pages/new.html">New</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="pages/shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="pages/brands.html">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="pages/login.html">Log in</a>
+                        </li>
+
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link text-uppercase" aria-current="page" href="pages/wishlist.html">Wish List</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link text-uppercase" aria-current="page" href="pages/cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link text-uppercase" aria-current="page" href="pages/profile.html">Profile</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <a class="btn border-0 d-none d-lg-block position-relative" href="pages/wishlist.html">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="wishlist" height="20"
+                                style="filter: invert(1);">
+                            <span class="position-absolute translate-middle-x p-6 bg-danger rounded-circle"></span>
+                        </a>
+                        <a class="btn border-0 d-none d-lg-block position-relative" href="pages/cart.html">
+                            <img src="assets/images/icon/main/cart.svg" alt="cart" height="20"
+                                style="filter: invert(1);">
+                        </a>
+                        <a class="btn border-0 d-none d-lg-block position-relative" href="pages/profile.html">
+                            <img src="assets/images/icon/main/profile.svg" alt="profile" height="20"
+                                style="filter: invert(1);">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <section class="main-content pb-5">
+
+        <!-- search bar -->
+        <div class="search-bar container py-4" data-bs-theme="dark">
+            <form class="d-flex position-relative" role="search">
+                <input class="form-control rounded-pill shadow-none search-bar-adj ps-4 pe-6" type="search"
+                    placeholder="Search for products" aria-label="Search">
+
+                <button class="btn h-100 rounded-pill position-absolute start-100 translate-end-x px-3 py-2"
+                    type="submit">
+                    <img src="assets/images/icon/main/search.svg" alt="search" height="21" style="filter: invert(1);">
+                </button>
+            </form>
+        </div>
+
+        <!-- main banner -->
+        <div class="main-banner container col-md-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded-5">
+                    <div class="carousel-item active">
+                        <img src="assets/images/banner/p7.png" class="banner-img w-100" alt="main banner">
+                        <div class="carousel-caption d-none">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/banner/p5.png" class="banner-img w-100" alt="main banner">
+                        <div class="carousel-caption d-none">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/banner/p6.png" class="banner-img w-100" alt="main banner">
+                        <div class="carousel-caption d-none">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- new arrivals section -->
+        <div class="new-arrivals container mt-5">
+            <div class="grid-container">
+                <div class="grid-item item-1 card bg-white">
+                    <img src="assets/images/banner/side-banner-1.svg" class="object-fit-cover d-none d-lg-block"
+                        alt="thumbnail-img">
+                    <img src="assets/images/banner/side-banner-1-1.svg" class="object-fit-cover d-lg-none"
+                        alt="thumbnail-img">
+                </div>
+
+                <div class="grid-item item-2 card bg-white">
+                    <img src="assets/images/thumb/16.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img" onclick="singleProductView()">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body" onclick="singleProductView()">
+                        <h5 class="card-title fw-bold mb-4">Apple iPhone 16 5G 8GM RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 189,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            249,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">20%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-3 card bg-white">
+                    <img src="assets/images/thumb/nothing.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Nothing Phone 2a 5G 8GB RAM 128GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 259,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            289,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">15%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-4 card bg-white">
+                    <img src="assets/images/thumb/mac1.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Macbook Pro M3 16GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 261,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            279,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">8%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-5 card bg-white">
+                    <img src="assets/images/thumb/oneplus.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">OnePlus 12 5G 12GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 379,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-6 card bg-white">
+                    <img src="assets/images/thumb/max.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Aplle Airpod Max Noise Cancellation</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 329,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-7 card bg-white">
+                    <img src="assets/images/thumb/zte-nubia-neo.jpeg" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">ZTE Nubia Neo 5G 8GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 73,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div><br><br>
+
+        <!-- trending section -->
+        <div class="trending container mt-5">
+            <div class="grid-container">
+                <div class="grid-item item-1 card bg-white">
+                    <img src="assets/images/banner/side-banner-2.svg" class="object-fit-cover d-none d-lg-block"
+                        alt="thumbnail-img">
+                    <img src="assets/images/banner/side-banner-2-1.svg" class="object-fit-cover d-lg-none"
+                        alt="thumbnail-img">
+                </div>
+
+                <div class="grid-item item-2 card bg-white">
+                    <img src="assets/images/thumb/16.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img" onclick="singleProductView()">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body" onclick="singleProductView()">
+                        <h5 class="card-title fw-bold mb-4">Apple iPhone 16 5G 8GM RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 189,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            249,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">20%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-3 card bg-white">
+                    <img src="assets/images/thumb/nothing.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Nothing Phone 2a 5G 8GB RAM 128GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 259,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            289,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">15%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-4 card bg-white">
+                    <img src="assets/images/thumb/mac1.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Macbook Pro M3 16GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 261,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            279,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">8%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-5 card bg-white">
+                    <img src="assets/images/thumb/oneplus.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">OnePlus 12 5G 12GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 379,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-6 card bg-white">
+                    <img src="assets/images/thumb/max.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Aplle Airpod Max Noise Cancellation</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 329,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-7 card bg-white">
+                    <img src="assets/images/thumb/zte-nubia-neo.jpeg" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">ZTE Nubia Neo 5G 8GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 73,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div><br><br>
+
+        <!-- foy you section -->
+        <div class="for-you container mt-5">
+            <div class="grid-container">
+                <div class="grid-item item-1 card bg-white">
+                    <img src="assets/images/banner/side-banner-3.svg" class="object-fit-cover d-none d-lg-block"
+                        alt="thumbnail-img">
+                    <img src="assets/images/banner/side-banner-3-1.svg" class="object-fit-cover d-lg-none"
+                        alt="thumbnail-img">
+                </div>
+
+                <div class="grid-item item-2 card bg-white">
+                    <img src="assets/images/thumb/16.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img" onclick="singleProductView()">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body" onclick="singleProductView()">
+                        <h5 class="card-title fw-bold mb-4">Apple iPhone 16 5G 8GM RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 189,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            249,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">20%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-3 card bg-white">
+                    <img src="assets/images/thumb/nothing.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Nothing Phone 2a 5G 8GB RAM 128GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 259,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            289,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">15%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-4 card bg-white">
+                    <img src="assets/images/thumb/mac1.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Macbook Pro M3 16GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 261,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            279,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">8%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-5 card bg-white">
+                    <img src="assets/images/thumb/oneplus.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">OnePlus 12 5G 12GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 379,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-6 card bg-white">
+                    <img src="assets/images/thumb/max.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Aplle Airpod Max Noise Cancellation</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 329,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-7 card bg-white">
+                    <img src="assets/images/thumb/zte-nubia-neo.jpeg" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">ZTE Nubia Neo 5G 8GB RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 73,990.00</p>
+                        <p
+                            class="new-price card-text fs-8 fw-light text-center mb-4 invisible text-decoration-line-through">
+                        </p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1 invisible"
+                            style="width: max-content;">
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid-item item-2 card bg-white">
+                    <img src="assets/images/thumb/16.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img" onclick="singleProductView()">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body" onclick="singleProductView()">
+                        <h5 class="card-title fw-bold mb-4">Apple iPhone 16 5G 8GM RAM 256GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 189,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            249,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">20%
+                            off</p>
+                    </div>
+                </div>
+
+                <div class="grid-item item-3 card bg-white">
+                    <img src="assets/images/thumb/nothing.png" class="card-img card-img-top object-fit-cover"
+                        style="aspect-ratio: 1/1;" alt="thumbnail-img">
+                    <div class="card-btn-div d-flex flex-column position-absolute start-100 translate-end-x">
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/wishlist.svg" alt="add to wishlist">
+                        </span>
+                        <span class="card-btn btn btn-danger" data-bs-toggle="button">
+                            <img src="assets/images/icon/main/cart.svg" alt="add to cart">
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold mb-4">Nothing Phone 2a 5G 8GB RAM 128GB</h5>
+                        <p class="card-text fw-bold fs-5 mb-0 pt-3 text-center">LKR 259,990.00</p>
+                        <p class="new-price card-text fs-8 fw-light text-center mb-4 text-decoration-line-through">LKR
+                            289,990.00</p>
+                        <p class="offer text-bg-danger rounded card-text fs-8 px-2 py-1" style="width: max-content;">15%
+                            off</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- view more button -->
+        <div class="container col-md-12 mt-5">
+            <button type="button" class="btn btn-custom w-100 br-15">View more
+                <span><img src="assets/images/icon/other/down.svg" height="20" alt="down-arrow"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer container text-light mt-5">
+        <!-- links -->
+        <div class="links-div row mb-5">
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">HOME</h6>
+                <div class="list-group text-break">
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Search</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Brands</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">New Arrivals</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Trending</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">For You</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">Account</h6>
+                <div class="list-group text-break">
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Register</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">My Profile</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Wish List</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Cart</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Orders</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">Discover</h6>
+                <div class="list-group text-break">
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">New Arrivals</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Brands</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Shop</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Contact Us</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">About Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">New Tech (PVT) LTD</h6>
+                <div class="list-group text-break">
+                    <a class="list-group-item list-group-item-action fs-7 fw-light"
+                        href="#">newtechonlinestore@gmail.com</a>
+                    <a class="list-group-item list-group-item-action fs-7 fw-light" href="#">011 2345 678</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- socails -->
+        <div class="socials-div row d-flex justify-content-center">
+            <h6 class="text-uppercase fw-bold fs-7 text-center mt-4">Connect With Us On</h6>
+            <div class="btn-group col-sm-12 col-md-8 col-lg-5 col-xl-4" role="group">
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-envelope-fill"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-facebook"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-messenger"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-instagram"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-whatsapp"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-linkedin "></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill">
+                    <a href="" class="text-reset"><i class="bi bi-telephone-fill"></i></a>
+                </button>
+            </div>
+        </div>
+
+        <!-- payments -->
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-9 col-xl-8" style="height: 35px;"></div>
+            <div class="payments-div col-sm-12 col-md-12 col-lg-3 col-xl-4 d-flex align-items-center 
+                        justify-content-center justify-content-lg-end mt-4 mt-lg-0 gap-3 translate-end-y">
+                <img src="assets/images/payment/visa.svg" style="height: 21px;" alt="visa">
+                <img src="assets/images/payment/mastercard.svg" style="height: 32px;" alt="mastercard">
+                <img src="assets/images/payment/americanexpress.svg" style="height: 35px;" alt="american express">
+                <img src="assets/images/payment/googlepay.svg" style="height: 35px;" alt="google pay">
+            </div>
+        </div>
+
+        <!-- copyrights -->
+        <div class="copyrights-div">
+            <hr>
+            <p class="text-center text-light-emphasis fs-7">Copyright &copy; 2022 New Tech
+                (PVT) LTD. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main-script.js"></script>
+
+    <!-- loader js -->
+    <script src="assets/js/loader.js"></script>
+
+    <!-- scroll smoother -->
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+</body>
+
+</html>

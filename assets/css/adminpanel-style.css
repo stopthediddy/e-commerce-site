@@ -1,0 +1,45 @@
+.admin-panel {
+    max-height: 82vh;
+    border-radius: .9375rem;
+    overflow: scroll;
+}
+
+.admin-panel-menu {
+    max-height: 82vh;
+}
+
+.admin-panel-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.admin-panel::-webkit-scrollbar {
+    display: none;
+}
+
+.main-content {
+    height: 89vh;
+    overflow: hidden;
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* .admin-panel .row {
+    border-radius: .9375rem;
+    max-height: 74.2vh;
+    overflow-y: scroll;
+    background-color: aqua;
+} */
+
+/* .admin-panel .row::-webkit-scrollbar {
+    display: none;
+} */
+
+.admin-tab-d-none {
+    display: none;
+}
+
+.admin-tab-d {
+    display: block !important;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist | New Tech</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../assets/css/main-style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/icon/main/logo.svg" type="image/x-icon">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="loader-div">
+        <div class="loader"></div>
+    </div>
+
+    <!-- navigation bar -->
+    <nav class="navbar-custom navbar navbar-expand-lg navbar-dark sticky-top ">
+        <div class="container pt-2 pb-1">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <img src="../assets/images/icon/main/logo.svg" class="me-1" alt="LOGO" height="30"
+                    class="d-inline-block align-text-top">
+                NEW TECH
+            </a>
+
+            <button class="navbar-toggler shadow-none p-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="btn btn-dark fs-7">MENU</span>
+            </button>
+
+            <div class="offcanvas offcanvas-custom offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-uppercase fw-bold fs-3" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body nav-underline">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-4 fs-7">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="new.html">New</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="brands.html">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" aria-current="page" href="login.html">Log in</a>
+                        </li>
+
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link text-uppercase active" aria-current="page" href="wishlist.html">Wish
+                                List</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link text-uppercase" aria-current="page" href="cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link text-uppercase" aria-current="page" href="profile.html">Profile</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <a class="btn border-0 d-none d-lg-block position-relative bg-dark" href="wishlist.html">
+                            <img src="../assets/images/icon/main/wishlist.svg" alt="wishlist" height="20"
+                                style="filter: invert(1);">
+                            <span class="position-absolute translate-middle-x p-6 bg-danger rounded-circle"></span>
+                        </a>
+                        <a class="btn border-0 d-none d-lg-block position-relative" href="cart.html">
+                            <img src="../assets/images/icon/main/cart.svg" alt="cart" height="20"
+                                style="filter: invert(1);">
+                        </a>
+                        <a class="btn border-0 d-none d-lg-block position-relative" href="profile.html">
+                            <img src="../assets/images/icon/main/profile.svg" alt="profile" height="20"
+                                style="filter: invert(1);">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <section class="main-content pb-5">
+
+        <!-- search bar -->
+        <div class="search-bar container py-4" data-bs-theme="dark">
+            <form class="d-flex position-relative" role="search">
+                <input class="form-control rounded-pill shadow-none search-bar-adj ps-4 pe-6" type="search"
+                    placeholder="Search for products" aria-label="Search">
+
+                <button class="btn h-100 rounded-pill position-absolute start-100 translate-end-x px-3 py-2"
+                    type="submit">
+                    <img src="../assets/images/icon/main/search.svg" alt="search" height="21"
+                        style="filter: invert(1);">
+                </button>
+            </form>
+        </div>
+
+        <!-- wishlist items -->
+        <div class="container mt-5">
+            <!-- title -->
+            <h1 class="fw-bold text-muted text-uppercase fs-1">
+                Wishlist
+                <span>(6)</span>
+            </h1>
+            <!-- grid layout -->
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-lg-3">
+
+                <!-- item -->
+                <div class="col-lg-6">
+                    <div class="cart-items-div">
+                        <div class="cart-item card rounded-4 border-0 p-2 mb-2 mx-0">
+                            <div class="row">
+                                <div class="col-4 col-md-3 col-lg-4 h-100">
+                                    <img src="../assets/images/thumb/16.png" class="object-fit-cover mw-100 br-15"
+                                        style="aspect-ratio: 1/1;" alt="product">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="card-title fw-bold">Brand iPhone 16 5G 8GM RAM Max 256GB</h6>
+                                    <p class="card-text m-1 m-sm-2 text-muted">Brand</p>
+                                    <div class="d-flex justify-content-between flex-column flex-sm-row">
+                                        <p class="fw-bold m-1 m-sm-2">LKR 189,990.00</p>
+                                        <div class="d-flex gap-2">
+                                            <button type="button"
+                                                class="btn btn-light btn-sm rounded-pill px-3 py-2 py-sm-0 border-0">
+                                                Add to Cart
+                                            </button>
+                                            <button class="btn btn-danger btn-sm rounded-pill border-0">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-6">
+                    <div class="cart-items-div">
+                        <div class="cart-item card rounded-4 border-0 p-2 mb-2 mx-0">
+                            <div class="row">
+                                <div class="col-4 col-md-3 col-lg-4 h-100">
+                                    <img src="../assets/images/thumb/psuedo.png" class="object-fit-cover mw-100 br-15"
+                                        style="aspect-ratio: 1/1;" alt="product">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="card-title fw-bold">Product Name</h6>
+                                    <p class="card-text m-1 m-sm-2 text-muted">Brand</p>
+                                    <div class="d-flex justify-content-between flex-column flex-sm-row">
+                                        <p class="fw-bold m-1 m-sm-2">LKR XXX,XXX.XX</p>
+                                        <div class="d-flex gap-2">
+                                            <button type="button"
+                                                class="btn btn-light btn-sm rounded-pill px-3 py-2 py-sm-0 border-0">
+                                                Add to Cart
+                                            </button>
+                                            <button class="btn btn-danger btn-sm rounded-pill border-0">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-6">
+                    <div class="cart-items-div">
+                        <div class="cart-item card rounded-4 border-0 p-2 mb-2 mx-0">
+                            <div class="row">
+                                <div class="col-4 col-md-3 col-lg-4 h-100">
+                                    <img src="../assets/images/thumb/psuedo.png" class="object-fit-cover mw-100 br-15"
+                                        style="aspect-ratio: 1/1;" alt="product">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="card-title fw-bold">Product Name</h6>
+                                    <p class="card-text m-1 m-sm-2 text-muted">Brand</p>
+                                    <div class="d-flex justify-content-between flex-column flex-sm-row">
+                                        <p class="fw-bold m-1 m-sm-2">LKR XXX,XXX.XX</p>
+                                        <div class="d-flex gap-2">
+                                            <button type="button"
+                                                class="btn btn-light btn-sm rounded-pill px-3 py-2 py-sm-0 border-0">
+                                                Add to Cart
+                                            </button>
+                                            <button class="btn btn-danger btn-sm rounded-pill border-0">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-6">
+                    <div class="cart-items-div">
+                        <div class="cart-item card rounded-4 border-0 p-2 mb-2 mx-0">
+                            <div class="row">
+                                <div class="col-4 col-md-3 col-lg-4 h-100">
+                                    <img src="../assets/images/thumb/psuedo.png" class="object-fit-cover mw-100 br-15"
+                                        style="aspect-ratio: 1/1;" alt="product">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="card-title fw-bold">Product Name</h6>
+                                    <p class="card-text m-1 m-sm-2 text-muted">Brand</p>
+                                    <div class="d-flex justify-content-between flex-column flex-sm-row">
+                                        <p class="fw-bold m-1 m-sm-2">LKR XXX,XXX.XX</p>
+                                        <div class="d-flex gap-2">
+                                            <button type="button"
+                                                class="btn btn-light btn-sm rounded-pill px-3 py-2 py-sm-0 border-0">
+                                                Add to Cart
+                                            </button>
+                                            <button class="btn btn-danger btn-sm rounded-pill border-0">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-6">
+                    <div class="cart-items-div">
+                        <div class="cart-item card rounded-4 border-0 p-2 mb-2 mx-0">
+                            <div class="row">
+                                <div class="col-4 col-md-3 col-lg-4 h-100">
+                                    <img src="../assets/images/thumb/psuedo.png" class="object-fit-cover mw-100 br-15"
+                                        style="aspect-ratio: 1/1;" alt="product">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="card-title fw-bold">Product Name</h6>
+                                    <p class="card-text m-1 m-sm-2 text-muted">Brand</p>
+                                    <div class="d-flex justify-content-between flex-column flex-sm-row">
+                                        <p class="fw-bold m-1 m-sm-2">LKR XXX,XXX.XX</p>
+                                        <div class="d-flex gap-2">
+                                            <button type="button"
+                                                class="btn btn-light btn-sm rounded-pill px-3 py-2 py-sm-0 border-0">
+                                                Add to Cart
+                                            </button>
+                                            <button class="btn btn-danger btn-sm rounded-pill border-0">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-6">
+                    <div class="cart-items-div">
+                        <div class="cart-item card rounded-4 border-0 p-2 mb-2 mx-0">
+                            <div class="row">
+                                <div class="col-4 col-md-3 col-lg-4 h-100">
+                                    <img src="../assets/images/thumb/psuedo.png" class="object-fit-cover mw-100 br-15"
+                                        style="aspect-ratio: 1/1;" alt="product">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="card-title fw-bold">Product Name</h6>
+                                    <p class="card-text m-1 m-sm-2 text-muted">Brand</p>
+                                    <div class="d-flex justify-content-between flex-column flex-sm-row">
+                                        <p class="fw-bold m-1 m-sm-2">LKR XXX,XXX.XX</p>
+                                        <div class="d-flex gap-2">
+                                            <button type="button"
+                                                class="btn btn-light btn-sm rounded-pill px-3 py-2 py-sm-0 border-0">
+                                                Add to Cart
+                                            </button>
+                                            <button class="btn btn-danger btn-sm rounded-pill border-0">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer container text-light mt-5">
+        <!-- links -->
+        <div class="links-div row mb-5">
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">HOME</h6>
+                <div class="list-group text-break">
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Search</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Brands</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">New Arrivals</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Trending</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">For You</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">Account</h6>
+                <div class="list-group text-break">
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Register</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Mb-1rofile</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Wish List</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Cart</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Orders</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">Discover</h6>
+                <div class="list-group text-break">
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">New Arrivals</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Brands</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Shop</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">Contact Us</a>
+                    <a href="#" class="list-group-item list-group-item-action fs-7 fw-light">About Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pt-5">
+                <h6 class="text-uppercase fw-bold fs-7 ">New Tech (PVT) LTD</h6>
+                <div class="list-group text-break">
+                    <a class="list-group-item list-group-item-action fs-7 fw-light"
+                        href="#">newtechonlinestore@gmail.com</a>
+                    <a class="list-group-item list-group-item-action fs-7 fw-light" href="#">011 2345 678</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- socails -->
+        <div class="socials-div row d-flex justify-content-center">
+            <h6 class="text-uppercase fw-bold fs-7 text-center mt-4">Connect With Us On</h6>
+            <div class="btn-group col-sm-12 col-md-8 col-lg-5 col-xl-4" role="group">
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-envelope-fill"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-facebook"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-messenger"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-instagram"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-whatsapp"></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill me-2">
+                    <a href="" class="text-reset"><i class="bi bi-linkedin "></i></a>
+                </button>
+                <button type="button" class="btn btn-light btn-sm rounded-pill">
+                    <a href="" class="text-reset"><i class="bi bi-telephone-fill"></i></a>
+                </button>
+            </div>
+        </div>
+
+        <!-- payments -->
+        <div class="row">
+            <div class=" col-sm-12 col-md-12 col-lg-9 col-xl-8" style="height: 35px;"></div>
+            <div class="payments-div col-sm-12 col-md-12 col-lg-3 col-xl-4 d-flex align-items-center 
+                        justify-content-center justify-content-lg-end mt-4 mt-lg-0 gap-3 translate-end-y">
+                <img src="../assets/images/payment/visa.svg" style="height: 21px;" alt="visa">
+                <img src="../assets/images/payment/mastercard.svg" style="height: 32px;" alt="mastercard">
+                <img src="../assets/images/payment/americanexpress.svg" style="height: 35px;" alt="american express">
+                <img src="../assets/images/payment/googlepay.svg" style="height: 35px;" alt="google pay">
+            </div>
+        </div>
+
+        <!-- copyrights -->
+        <div class="copyrights-div">
+            <hr>
+            <p class="text-center text-light-emphasis fs-7">Copyright &copy; 2022 New Tech
+                (PVT) LTD. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <!-- custom js -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- loader js -->
+    <script src="../assets/js/loader.js"></script>
+
+    <!-- scroll smoother -->
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script>
+    <script src="../assets/js/smoothscroll.js"></script>
+</body>
+
+</html>
