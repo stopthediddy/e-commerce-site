@@ -3,7 +3,9 @@
 # E-commerce Website (Electronic Items Store)  
 
 >*A modern & responsive frontend for a electronics items store*  
->*with **smooth scrolling** and **interactive animations.***  
+>*with **smooth scrolling** and **interactive animations.***
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-27AE60?style=for-the-badge&logo=google-chrome&logoColor=white)](https://shazee-04.github.io/e-commerce-site "click here to visit the live website")  
 
 ![eCommerce Preview](https://github.com/user-attachments/assets/eb152c17-a4c6-4bcf-a426-f318c7d51bd9)  
 
