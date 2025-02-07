@@ -10,7 +10,7 @@
 <br>  
 
 [![GitHub Repo](https://img.shields.io/badge/View%20on-GitHub-000?style=for-the-badge&logo=github)](https://github.com/shazee-04/e-commerce-site "click here to visit the repository") 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-27AE60?style=for-the-badge&logo=google-chrome&logoColor=white)](your-live-demo-link "click here to visit the live website")  
+[![Live Demo](https://img.shields.io/badge/Live-Demo-27AE60?style=for-the-badge&logo=google-chrome&logoColor=white)](https://shazee-04.github.io/e-commerce-site "click here to visit the live website")  
 
 </div>  
 
@@ -69,7 +69,7 @@
 
 ![Screenshot_25-12-2024_11837_127 0 0 1](https://github.com/user-attachments/assets/f667357b-e00c-4d5f-b98b-1fd5dd211e3d)
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-27AE60?style=for-the-badge&logo=google-chrome&logoColor=white)](your-live-demo-link "click here to visit the live website")  
+[![Live Demo](https://img.shields.io/badge/Live-Demo-27AE60?style=for-the-badge&logo=google-chrome&logoColor=white)](https://shazee-04.github.io/e-commerce-site "click here to visit the live website")  
 
 </div>  
 
